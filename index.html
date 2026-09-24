@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Beautiful by Jade | Hair & Beauty Salon Stanley DH9</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #0d0a0b; 
+            color: #f8fafc;
+        }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .rose-glass {
+            background: rgba(26, 18, 21, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(244, 114, 182, 0.25);
+        }
+        .rose-glow {
+            box-shadow: 0 0 25px -5px rgba(244, 114, 182, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen pb-28">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-amber-100 via-rose-100 to-amber-100 text-rose-950 text-[11px] font-black py-2 px-4 text-center uppercase tracking-widest flex items-center justify-center gap-2 shadow-sm">
+        <i class="fa-solid fa-scissors text-rose-700"></i> Premium Hair & Beauty Salon • Stanley DH9 8HY
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-[#0d0a0b]/90 backdrop-blur-md border-b border-rose-900/40 px-5 py-4">
+        <div class="max-w-md mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-lg font-bold font-playfair tracking-wider text-rose-100 flex items-center gap-2">
+                    Be Beautiful <span class="text-xs font-sans text-rose-400 font-semibold tracking-widest uppercase">by Jade</span>
+                </h1>
+                <p class="text-[9px] text-rose-300/70 font-extrabold uppercase tracking-widest">Station Road • Stanley DH9 8HY</p>
+            </div>
+            <a href="https://wa.me/447871760736?text=Hi%20Jade,%20I'd%20like%20to%20book%20a%20salon%20appointment" target="_blank" class="bg-gradient-to-r from-rose-200 to-amber-200 hover:from-rose-100 hover:to-amber-100 text-rose-950 text-xs px-3.5 py-2 rounded-xl font-black uppercase transition-all flex items-center gap-1.5 shadow-lg">
+                <i class="fa-brands fa-whatsapp text-sm text-emerald-600"></i> <span>07871 760736</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-5 mt-6 space-y-6">
+
+        <!-- Hero Card -->
+        <section class="rose-glass p-6 rounded-3xl space-y-3 relative overflow-hidden rose-glow">
+            <div class="inline-flex items-center gap-1.5 bg-rose-500/10 border border-rose-400/30 px-3 py-1 rounded-full text-[10px] uppercase font-bold text-rose-300">
+                <i class="fa-solid fa-sparkles text-amber-300"></i> Stanley's Luxury Hair & Aesthetics Studio
+            </div>
+            <h2 class="text-2xl font-bold font-playfair text-rose-50 leading-tight">
+                Effortless Hair Styling & Beauty Enhancements
+            </h2>
+            <p class="text-[11px] text-rose-200/80 leading-relaxed">
+                From precision cuts and custom balayage coloring to HD brow laminations and builder gel nails. Handcrafted perfection for every client.
+            </p>
+        </section>
+
+        <!-- Deposit Banner -->
+        <div class="rose-glass p-4 rounded-2xl flex items-start gap-3 border-rose-500/40">
+            <div class="w-8 h-8 rounded-full bg-rose-400/20 flex items-center justify-center text-rose-300 shrink-0 mt-0.5">
+                <i class="fa-solid fa-calendar-check text-sm"></i>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold text-rose-100 uppercase tracking-wider">£15.00 Reservation Deposit</h4>
+                <p class="text-[11px] text-rose-300/80 mt-0.5 leading-relaxed">
+                    A small <strong class="text-rose-200">£15 deposit</strong> secures your appointment slot with Jade. The remaining balance is paid at the salon.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service Selection -->
+        <section class="space-y-3.5">
+            <div>
+                <h3 class="text-xs font-bold font-playfair uppercase text-rose-100 tracking-wider">Select Salon Service</h3>
+                <p class="text-[11px] text-rose-300/70">Tap a treatment below to select and book.</p>
+            </div>
+
+            <div class="space-y-3">
+                
+                <!-- Service 1: Balayage & Styling -->
+                <div onclick="selectService(this, 'Full Head Balayage, Cut & Style', 95.00)" class="service-card cursor-pointer rose-glass border-2 border-rose-400 p-4 rounded-2xl transition-all shadow-xl">
+                    <div class="flex gap-3.5 items-center">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-400/40 flex items-center justify-center text-amber-300 shrink-0">
+                            <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-rose-50 uppercase tracking-wide">Full Head Balayage & Cut</h4>
+                                <span class="text-xs font-black text-rose-300">£95.00</span>
+                            </div>
+                            <p class="text-[10px] text-rose-200/70 mt-1 leading-snug">Bespoke hand-painted balayage blend, toner, restorative gloss condition, cut & blow-dry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Cut & Luxury Blow Dry -->
+                <div onclick="selectService(this, 'Precision Cut & Bouncy Blow Dry', 38.00)" class="service-card cursor-pointer bg-stone-900/60 border border-rose-900/30 p-4 rounded-2xl transition-all hover:border-rose-700/50">
+                    <div class="flex gap-3.5 items-center">
+                        <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-400/40 flex items-center justify-center text-rose-400 shrink-0">
+                            <i class="fa-solid fa-scissors text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-rose-50 uppercase tracking-wide">Precision Cut & Blow Dry</h4>
+                                <span class="text-xs font-bold text-rose-200">£38.00</span>
+                            </div>
+                            <p class="text-[10px] text-rose-200/70 mt-1 leading-snug">Wash, deep condition treatment, precision restyle or trim, and signature voluminous blow-dry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Brow Lamination -->
+                <div onclick="selectService(this, 'Signature Brow Lamination & Tint', 32.00)" class="service-card cursor-pointer bg-stone-900/60 border border-rose-900/30 p-4 rounded-2xl transition-all hover:border-rose-700/50">
+                    <div class="flex gap-3.5 items-center">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-400/40 flex items-center justify-center text-pink-300 shrink-0">
+                            <i class="fa-solid fa-eye text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-rose-50 uppercase tracking-wide">Brow Lamination & Tint</h4>
+                                <span class="text-xs font-bold text-rose-200">£32.00</span>
+                            </div>
+                            <p class="text-[10px] text-rose-200/70 mt-1 leading-snug">Fluffy brow restyle treatment, precision mapping, tinting, and waxing for long-lasting definition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: BIAB Builder Gel Nails -->
+                <div onclick="selectService(this, 'BIAB Gel Overlay on Natural Nails', 30.00)" class="service-card cursor-pointer bg-stone-900/60 border border-rose-900/30 p-4 rounded-2xl transition-all hover:border-rose-700/50">
+                    <div class="flex gap-3.5 items-center">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-400/40 flex items-center justify-center text-amber-300 shrink-0">
+                            <i class="fa-solid fa-hand-sparkles text-lg"></i>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-rose-50 uppercase tracking-wide">BIAB Builder Gel Overlay</h4>
+                                <span class="text-xs font-bold text-rose-200">£30.00</span>
+                            </div>
+                            <p class="text-[10px] text-rose-200/70 mt-1 leading-snug">Strengthening builder gel on natural nails, cuticle maintenance, and gel color finish.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <section class="rose-glass p-6 rounded-3xl space-y-5 shadow-2xl">
+            <div class="border-b border-rose-900/50 pb-4 space-y-1">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-rose-300/80">Selected Service:</span>
+                    <strong id="selected-service-name" class="text-rose-100 font-bold">Full Head Balayage & Cut</strong>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-rose-300/80">Service Total:</span>
+                    <strong id="service-total-price" class="text-rose-200 font-bold">£95.00</strong>
+                </div>
+                <div class="flex justify-between items-center text-xs text-rose-300 font-bold pt-1.5 border-t border-rose-900/50">
+                    <span>Deposit Payable Now:</span>
+                    <span class="text-sm font-black text-rose-300">£15.00</span>
+                </div>
+            </div>
+
+            <form onsubmit="event.preventDefault(); openPaymentModal();" class="space-y-3.5">
+                <div>
+                    <label class="block text-[10px] font-bold text-rose-200 uppercase tracking-wider mb-1">Full Name</label>
+                    <input id="client-name" type="text" placeholder="e.g. Jessica Taylor" required class="w-full bg-stone-950 border border-rose-900/50 rounded-xl px-3.5 py-2.5 text-xs text-rose-100 outline-none focus:border-rose-400 transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-bold text-rose-200 uppercase tracking-wider mb-1">Mobile / WhatsApp Number</label>
+                    <input id="client-phone" type="tel" placeholder="e.g. 07871 760736" required class="w-full bg-stone-950 border border-rose-900/50 rounded-xl px-3.5 py-2.5 text-xs text-rose-100 outline-none focus:border-rose-400 transition-all">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-rose-200 via-amber-100 to-rose-200 hover:from-rose-100 hover:to-amber-50 text-rose-950 font-black py-3.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock text-xs"></i>
+                    <span>Pay £15.00 Deposit & Book Salon Slot</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center space-y-2 pt-4 border-t border-rose-900/50">
+            <p class="text-xs font-bold text-rose-200 font-playfair tracking-widest uppercase">Be Beautiful by Jade</p>
+            <p class="text-[11px] text-rose-300/70">Station Road, Stanley, DH9 8HY</p>
+            <p class="text-[11px] text-rose-300 font-bold">WhatsApp Direct: 07871 760736</p>
+        </footer>
+
+    </main>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="fixed inset-0 bg-stone-950/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-stone-900 border border-rose-800 rounded-3xl max-w-sm w-full p-6 space-y-5 shadow-2xl relative">
+            <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-rose-400 hover:text-rose-100 text-base">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center space-y-1">
+                <h3 class="text-sm font-bold font-playfair uppercase tracking-wider text-rose-100">Reserve Salon Appointment</h3>
+                <p class="text-[11px] text-rose-300/70">Be Beautiful by Jade • Stanley</p>
+            </div>
+
+            <div class="bg-stone-950 p-3.5 rounded-2xl border border-rose-900/60 text-xs space-y-1">
+                <div class="flex justify-between text-rose-200">
+                    <span>Deposit Payable Now:</span>
+                    <strong class="text-rose-300 font-black">£15.00</strong>
+                </div>
+                <div class="flex justify-between text-rose-400/80 text-[10px]">
+                    <span>Remaining Balance at Salon:</span>
+                    <span id="modal-remaining" class="text-rose-100 font-bold">£80.00</span>
+                </div>
+            </div>
+
+            <button onclick="completePayment('Card')" class="w-full bg-rose-200 hover:bg-rose-100 text-rose-950 font-black py-3 rounded-xl text-xs uppercase tracking-wider transition-all">
+                Pay £15.00 via Credit / Debit Card
+            </button>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="fixed inset-0 bg-stone-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-stone-900 border border-rose-500/40 rounded-3xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl">
+            <div class="w-14 h-14 bg-rose-400/20 text-rose-300 rounded-full flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-lg font-bold font-playfair text-rose-100">Salon Booking Reserved</h3>
+            <p id="confirm-msg" class="text-xs text-rose-200/90 leading-relaxed"></p>
+            <button onclick="document.getElementById('confirmation-modal').classList.add('hidden')" class="w-full bg-rose-900/60 text-rose-100 border border-rose-700/50 font-bold py-2.5 rounded-xl text-xs uppercase">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let basePrice = 95.00;
+
+        function selectService(card, name, price) {
+            document.querySelectorAll('.service-card').forEach(c => {
+                c.className = 'service-card cursor-pointer bg-stone-900/60 border border-rose-900/30 p-4 rounded-2xl transition-all hover:border-rose-700/50';
+            });
+            card.className = 'service-card cursor-pointer rose-glass border-2 border-rose-400 p-4 rounded-2xl transition-all shadow-xl';
+
+            basePrice = price;
+            document.getElementById('selected-service-name').innerText = name;
+            updateTotals();
+        }
+
+        function updateTotals() {
+            const remaining = basePrice - 15.00;
+            document.getElementById('service-total-price').innerText = '£' + basePrice.toFixed(2);
+            document.getElementById('modal-remaining').innerText = '£' + (remaining > 0 ? remaining.toFixed(2) : '0.00');
+        }
+
+        function openPaymentModal() {
+            document.getElementById('payment-modal').classList.remove('hidden');
+        }
+
+        function closePaymentModal() {
+            document.getElementById('payment-modal').classList.add('hidden');
+        }
+
+        function completePayment(method) {
+            closePaymentModal();
+            const client = document.getElementById('client-name').value || 'valued client';
+            document.getElementById('confirm-msg').innerHTML = `Thank you, <strong>${client}</strong>.<br><br>Your <strong>£15.00 deposit</strong> was received via <strong>${method}</strong>.<br><br>Jade will confirm your appointment time via WhatsApp on <strong>07871 760736</strong>.`;
+            document.getElementById('confirmation-modal').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
